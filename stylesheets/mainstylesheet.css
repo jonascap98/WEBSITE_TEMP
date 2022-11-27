@@ -1,0 +1,328 @@
+body{
+    font-family: verdana, tahoma;
+    
+    background-color: #f3f3f3;
+}
+body a{
+    text-decoration:none;
+    font-size: 1.2em;
+    color: #111;
+}
+header{
+    background-color: rgba(252, 250, 250, 0.774);
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+}
+#header_logo{
+    font-size:1.6em;
+    color: #111;
+    font-weight: lighter;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+    letter-spacing: 4px;
+}
+nav{
+    text-align: center;
+}
+nav ul{
+    margin: auto;
+    width: fit-content;
+    
+}
+nav li{
+    display:inline-block;
+    width:100px;
+    height:40px;
+    cursor: pointer;
+}
+.big_menu{ 
+    display: none;
+    border-bottom: 1px solid rgb(225, 227, 230);
+}
+.small_menu{
+    background-color: rgba(252, 250, 250, 0.774);
+    border-bottom: 1px solid rgb(225, 227, 230);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+}
+nav a:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.active{
+    color: rgb(189, 188, 188);
+}
+
+.wrapper{
+    padding-top: 20%;
+    text-align: center;
+    min-height: 80vh;
+}
+#main_title{ 
+    font-size:1.6em;
+    text-align: center;
+    letter-spacing:4px;
+    padding-bottom: 1%;
+    font-weight: lighter;
+    color: black;
+}
+#main_footer{
+    background-color:rgb(20,20,20);
+    color:#fff;
+    padding-top:20px;
+    text-align:center;
+    height:150px;
+}
+
+#welkom_header{
+    padding-top: 25%;
+    padding-bottom:  25%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 4%;
+    font-size: 1.8em;
+    border: 1px solid lightgray;
+    background-image: url(../images/headers/header.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 8px rgba(44, 44, 44, 0.7);
+}
+#beschrijving{
+    background-color: #f3f3f3;
+    margin-bottom: 2%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: #111111;
+    border: 1px solid lightgray;
+}
+#spotlight{
+    background-image: url(../images/achtergronden/image.jpg);
+    margin-bottom: 2%;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+#spotlight img{
+    width: 90%;
+}
+#spotlight div{
+    float: left;
+    text-align: left;
+    width: 80%;
+    font-size: 1.2em;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+#spotlight div p,h3{
+    font-weight: lighter;
+}
+#cat_header, #header-merk{
+    visibility: hidden;
+}
+
+.container a{
+    font-size: 1em;
+    width: 45%;
+    margin-top: 2%; 
+}
+.container img{
+    width: 90%;
+    background-image: url(../images/achtergronden/achter.jpg);
+}
+.container_cat{
+    width: 90%;
+    margin: auto;
+    margin-top: 0%;
+}
+.container_cat a{
+    width: 100%;
+    
+}
+.container_cat img{
+    width: 100%;
+    
+}
+form{
+    background-image: url(../images/achtergronden/image.jpg);
+    display: inline-block;
+    padding: 5%;
+    
+}
+.form-group label{
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.form-group, .buttons{
+    text-align: left;
+    margin-bottom: 10px;
+}
+.form-wrapper{
+    text-align: right;
+    margin-top: 5%;
+    background-image: url(../images/headers/HeaderContact.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.7);
+}
+textarea{
+    max-width: 155px;
+}
+#onderschrift{
+    color: rgba(0,0,0,0.7);
+}
+.contact{
+    background-color: rgba(252, 250, 250, 0.774);
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color:#111;
+    text-align: center;
+    vertical-align: top;
+   border: 1px solid lightgray;
+
+}
+
+@media screen and (min-width:768px){
+    .wrapper{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .container{
+        width: 100%;
+        
+    }
+    .container > a{
+        margin: 0%;
+       width: 40%; 
+    }
+    .container_cat{
+        font-size: 1.4em;
+    }
+  
+    
+}
+@media only screen and (min-width:1025px){
+    .big_menu{
+        display: block;
+    }
+    .small_menu{
+        display: none;
+    }
+    .wrapper{
+        padding-top: 8%;
+        
+    }
+    #main_footer{
+        width: 100%;
+    }
+    .welkom_header{
+        margin: auto;
+        width: 100%;
+        height: 30vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 0;
+        font-size: 2.5em;
+    }
+    
+    #beschrijving{
+        
+        margin-top: 0;
+    }
+    .container{
+        font-size: 1.2em;
+        width: 100%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        width: 100%;
+        background-image: url(../images/achtergronden/image.jpg);
+    }
+    .container > a{
+        display: inline-block;
+        margin: auto;
+        border: 1px solid lightgray;
+        width: 22%;
+    }
+    .container > a > img{
+        width: 100%;
+    }
+   .container a:hover{
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+   }
+   .container_cat{
+    font-size: 80%;
+    width: 100%;
+    margin-bottom: 5%;
+    width: 100%;
+    background-image: url(../images/achtergronden/image.jpg);
+   }
+   .container_cat a{
+    display: inline-block;
+    margin: auto;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    border: 1px solid lightgray;
+    width: 22%;
+    height: 25%;
+    background: none;
+   }
+   .container_cat > a > img{
+    width: 100%;
+    }
+    .container_cat a:hover{
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+   .welkom_header{
+       
+       padding-bottom: 5%;
+       margin-bottom: 2%;
+   }
+   .welkom_header p{
+       font-size: 16px;  
+    }
+   .welkom_header h2{
+       top: 50%
+   }
+   #spotlight div{
+       width: 30%;
+   }
+   #spotlight img{
+    width: auto;
+    }
+    #header-merk{
+        background-image: url(../images/headers/header-blum.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 2%;
+        box-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        height: 40vh;
+        visibility: visible;
+    }
+    #cat_header{
+        background-image: url(../images/headers/header_hettich.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-bottom: 2%;
+        box-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        height: 40vh;
+        visibility: visible;
+    }
+    #cat_header div{
+        float: left;
+        text-align: left;
+        width: 80%;
+        font-size: 1.2em;
+        margin-left: 5%;
+        margin-top: 10%;
+    } 
+   
+}

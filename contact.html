@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title>IVOPRODUCTS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8"/>
+        <meta name="keywords" content="IVOPRODUCTS, contact, email">
+        <meta name="author" content="Cap Jonas">
+        <link href="stylesheets/mainstylesheet.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" type="image/png" href="images/icons/icon_16.png" sizes="16x16"/>
+        <link rel="icon" type="image/png" href="images/icons/icon_32.png" sizes="32x32"/>
+        <link rel="icon" type="image/png" href="images/icons/icon_96.png" sizes="96x96"/>
+        
+    </head>
+    <body>
+        <header>
+            <a href="index.html" id="header_logo">IVOPRODUCTS</a>
+            <!--SMARTPHONE MENU-->
+
+            <nav class="small_menu">
+                <a href="index.html" >HOME</a> . <a href="productenlijst.html">PRODUCTS</a> . <a href="contact.html" class="active">CONTACT</a>
+            </nav>
+            <!--DESKTOP MENU-->
+            <nav class="big_menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="productenlijst.html">PRODUCTS</a></li>
+                    <li><a href="contact.html" class="active">CONTACT</a></li>
+                </ul>   
+            </nav>
+        </header>
+        
+        <div class="wrapper">
+                <p class="contact">info@ivoproducts.com</p>
+                
+                <p class="contact">+32378648325</p>
+            <main class="form-wrapper">
+                
+                <form action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST" target="_blank" autocomplete="on">
+                    <div class="form-group">
+                        <label for="idNaam">Naam *</label>
+                        <input type="text" name="naam" id="idNaam" placeholder="Naam" maxlength="250" required/>
+                        <br>
+                        <label for="idVoornaam">Voornaam *</label>
+                        <input type="text" name="voornaam" id="idVoornaam" placeholder="Voornaam" maxlength="250" required/>
+                        <br>
+                        <label for="idEmail">E-mail *</label>
+                        <input type="email" name="email" id="idEmail" placeholder="naam@site.com" maxlength="250" required/>
+                        <br>
+                        <label for="idOnderwerpen">Onderwerp *</label>
+                        <select name="onderwerpen" id="idOnderwerpen">
+                            <option value="blank">--</option>
+                        <option value="Algemeen">Algemene vraag</option>
+                        <option value="hobby's">Bestelling</option>
+                        <option value="Varia">Varia</option>
+                        </select>
+                        <br>
+                        <label for="idBericht">Bericht *</label>
+                        <textarea name="bericht" id="idBericht" rows="3" cols="25" maxlength="2000" required></textarea>
+                    </div>
+                    <div class="buttons">
+                       <button type="submit" id="idSubmit" name="btnSubmit">Versturen</button>
+                        <button type="reset" id="idReset" name="btnReset">Wis Formulier</button>
+                        <br>
+                        <label id="onderschrift">*Verplichte velden</label>
+                    </div>
+                </form>
+            </main>
+        </div>
+        <footer id="main_footer">
+            <p>IVOProducts is een virtuele oefenfirma. Informatie, transacties en goederen<br>op deze website zijn fictief en hebben louter educatieve doeleinden.</p>
+            &copy; 2018 IVO Brugge.
+        </footer>
+    </body>
+</html>
